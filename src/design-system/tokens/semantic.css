@@ -1,0 +1,48 @@
+:root{
+/* ---- surfaces ---- */
+--surface-page:var(--paper);
+--surface-card:var(--white);
+--surface-raised:var(--paper-warm);
+--surface-inverse:var(--near-black);
+--surface-accent:var(--coral);
+
+/* ---- text ---- */
+--text-body:var(--ink);
+--text-muted:var(--stone);
+--text-inverse:var(--off-white);
+--text-accent:var(--coral);
+--text-link:var(--coral);
+--text-link-hover:var(--coral-press);
+
+/* ---- lines ---- */
+--line-subtle:var(--paper-edge);
+--line-strong:var(--ink);
+
+/* ---- actions ---- */
+--action-primary-bg:var(--coral);
+--action-primary-fg:var(--white);
+--action-primary-bg-hover:var(--coral-deep);
+--action-primary-bg-press:var(--coral-press);
+--action-secondary-bg:var(--royal-blue);
+--action-secondary-fg:var(--white);
+--action-tertiary-bg:var(--golden-yellow);
+--action-tertiary-fg:var(--near-black);
+--action-ghost-fg:var(--ink);
+--action-disabled-bg:var(--paper-edge);
+--action-disabled-fg:var(--stone-soft);
+
+/* ---- offering colours: each offering owns one colour, palette supports in fixed order ---- */
+--offering-sessions:var(--coral);
+--offering-sessions-tint:var(--coral-tint);
+--offering-events:var(--royal-blue);
+--offering-events-tint:var(--blue-tint);
+--offering-trips:var(--golden-yellow);
+--offering-trips-tint:var(--yellow-tint);
+--offering-run:var(--teal);
+--offering-run-tint:var(--teal-tint);
+
+/* ---- status ---- */
+--status-open:var(--teal);
+--status-filling:var(--golden-yellow);
+--status-closed:var(--stone);
+}

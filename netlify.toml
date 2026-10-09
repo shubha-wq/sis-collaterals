@@ -1,0 +1,20 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# AI background expansion (server function). Must come before the SPA fallback.
+[[redirects]]
+  from = "/api/expand-image"
+  to = "/.netlify/functions/expand-image"
+  status = 200
+  force = true
+
+# Single-page app: every route (/, /qa) is served by index.html.
+# Netlify serves real files first, so built assets are unaffected.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

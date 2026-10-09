@@ -1,0 +1,17 @@
+:root{
+--radius-none:0px;
+--radius-xs:2px;   /* session cards, media, tables — near-sharp is the brand default */
+--radius-sm:4px;
+--radius-md:8px;   /* inputs, small containers */
+--radius-lg:16px;  /* rarely: modals, sheets */
+--radius-pill:999px; /* every button and filter chip */
+--radius-circle:50%; /* offering icon badges, avatars */
+
+/* ---- SIS radius language (use these three) ----
+   Soft, restrained corners for internal elements. Not bubbly, not pills.
+   Exported creative canvases are always square (0) whatever these are;
+   creatives use the canvas-unit versions defined on .tpl-canvas. */
+--radius-subtle:4px;  /* small controls, thumbnails, logo plates */
+--radius-medium:8px;  /* buttons, inputs, chips, cards, review box */
+--radius-large:12px;  /* dialogs, menus, large panels */
+}

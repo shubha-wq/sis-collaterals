@@ -1,0 +1,13 @@
+:root{
+/* The brand is border-led, not shadow-led. Use hairlines first; shadows only to
+   lift an interactive card off the paper on hover. */
+--border-hairline:1px solid var(--paper-edge);
+--border-strong:1px solid var(--ink);
+--border-accent:1.5px solid var(--coral);
+
+--shadow-none:none;
+--shadow-card:0 1px 0 rgba(17,4,5,.04);
+--shadow-lift:0 8px 24px -8px rgba(17,4,5,.18);
+--shadow-pop:0 14px 40px -10px rgba(17,4,5,.24);
+--focus-ring:0 0 0 3px rgba(239,96,51,.35);
+}

@@ -1,0 +1,38 @@
+:root{
+/* ---- primary ---- */
+--coral:#EF6033;
+--teal:#17BEBB;
+/* ---- secondary ---- */
+--golden-yellow:#FFD33B;
+--coral-salmon:#E28162;
+--royal-blue:#1D4E9B;
+/* ---- neutral ---- */
+--near-black:#110405;
+--off-white:#FAF0E4;
+--stone:#8A8073;
+
+/* ---- tints: pale washes used as full-width row / section fills ---- */
+--coral-tint:#FCE7DE;
+--teal-tint:#DDF4F3;
+--yellow-tint:#FEF3D5;
+--blue-tint:#E5EAF4;
+--salmon-tint:#F8E5DE;
+
+/* ---- shades: hover / press darkening of the saturated colours ---- */
+--coral-deep:#D14C22;
+--coral-press:#B23F1B;
+--teal-deep:#12A0A0;
+--teal-press:#0D8484;
+--yellow-deep:#EDBB1F;
+--blue-deep:#163C78;
+--salmon-deep:#CE6B4C;
+
+/* ---- neutral ramp derived from the deck's paper + stone ---- */
+--paper:#FAF0E4;
+--paper-warm:#F4E8DA;
+--paper-edge:#EADFD0;
+--stone-soft:#B8AFA3;
+--ink:#110405;
+--ink-soft:#3A2E2C;
+--white:#FFFFFF;
+}

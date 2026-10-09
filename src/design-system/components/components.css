@@ -1,0 +1,51 @@
+/* Design-system component styles. Tokens only. */
+
+.ds-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border-radius: var(--radius-medium);
+  font-family: var(--font-body);
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.ds-btn--md {
+  padding: 10px 20px;
+  font-size: var(--fs-body-s);
+}
+.ds-btn--sm {
+  padding: 6px 14px;
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-semibold);
+}
+.ds-btn--primary {
+  border: 1px solid var(--action-primary-bg);
+  background: var(--action-primary-bg);
+  color: var(--off-white);
+}
+.ds-btn--primary:hover:not(:disabled) {
+  background: var(--action-primary-bg-hover);
+  border-color: var(--action-primary-bg-hover);
+}
+.ds-btn--secondary {
+  border: 1.5px solid var(--ink);
+  background: var(--white);
+  color: var(--ink);
+}
+.ds-btn--ghost {
+  border: var(--border-hairline);
+  background: var(--white);
+  color: var(--ink-soft);
+}
+.ds-btn--danger {
+  border: 1px solid var(--coral-deep);
+  background: var(--white);
+  color: var(--coral-deep);
+}
+.ds-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

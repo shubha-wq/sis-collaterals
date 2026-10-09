@@ -1,0 +1,115 @@
+/* Typography shared by templates. Sizes are in canvas units (var(--u)). */
+
+/* Templates are isolated from editor element styles: what renders here must
+   be identical wherever the canvas is mounted (editor, QA, export). */
+.tpl-canvas {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  /* The exported canvas is always square. Never round it. */
+  border-radius: 0 !important;
+  /* Creative radius scale in canvas units (mirrors CREATIVE_RADIUS in tokens.ts). */
+  --r-subtle: calc(var(--u) * 6);
+  --r-medium: calc(var(--u) * 10);
+  --r-large: calc(var(--u) * 16);
+  text-wrap: wrap;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+.tpl-canvas *,
+.tpl-canvas *::before,
+.tpl-canvas *::after {
+  box-sizing: border-box;
+}
+.tpl-canvas :is(h1, h2, h3, h4, p) {
+  margin: 0;
+  text-wrap: wrap;
+}
+
+.tpl-headline {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: var(--fw-black);
+  /* --hlh tightens the leading slightly on the last fit steps. */
+  line-height: calc(0.9 * var(--hlh, 1));
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  /* Words never break mid-word; the fit ladder resizes instead. Only a word
+     too long for the column even at the floor size may break. */
+  overflow-wrap: normal;
+  word-break: normal;
+  min-width: 0;
+  max-width: 100%;
+  /* Tight 0.9 leading lets glyphs hang ~0.15em below the last line box; pad
+     so the box contains the ink and nothing can sit in it. When the fit
+     ladder tightens the leading (--hlh), the pad grows by the same amount. */
+  padding-bottom: calc(0.15em + 0.9em * (1 - var(--hlh, 1)));
+}
+.tpl-headline-line {
+  display: block;
+}
+.tpl-headline[data-break="true"] {
+  overflow-wrap: anywhere;
+}
+
+.tpl-eyebrow {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: var(--fw-bold);
+  font-size: calc(var(--u) * 30);
+  line-height: 1.2;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.tpl-detail-label {
+  font-family: var(--font-body);
+  font-weight: var(--fw-bold);
+  font-size: calc(var(--u) * 17);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.tpl-detail-value {
+  font-family: var(--font-body);
+  font-weight: var(--fw-bold);
+  line-height: 1.16;
+  overflow-wrap: anywhere;
+  font-variant-numeric: tabular-nums;
+}
+
+.tpl-notes {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: var(--fw-semibold);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.tpl-tag {
+  font-family: var(--font-body);
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Editor-only ghost for an empty headline. Never rendered in exports. */
+.tpl-ghost {
+  border: calc(var(--u) * 3) dashed currentColor;
+  opacity: 0.4;
+  font-family: var(--font-body);
+  font-weight: var(--fw-semibold);
+  font-size: calc(var(--u) * 26);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: calc(var(--u) * 28) calc(var(--u) * 24);
+}

@@ -1,0 +1,39 @@
+:root{
+/* ---- families ---- */
+--font-display:"Bricolage Grotesque","Inter Tight",system-ui,sans-serif;
+--font-body:"Inter Tight",system-ui,-apple-system,sans-serif;
+--font-accent:"Pacifico",cursive; /* IP event lockups ONLY (Sistra Run, Sweat Fest) */
+
+/* ---- weights ---- */
+--fw-light:300; /* @kind font */
+--fw-regular:400; /* @kind font */
+--fw-medium:500; /* @kind font */
+--fw-semibold:600; /* @kind font */
+--fw-bold:700; /* @kind font */
+--fw-black:800; /* @kind font */
+
+/* ---- display scale (Bricolage Grotesque, --fw-black, tight) ---- */
+--fs-display-xl:88px;
+--fs-display-l:64px;
+--fs-display-m:48px;
+--fs-h1:40px;
+--fs-h2:32px;
+--fs-h3:24px;
+--fs-h4:20px;
+/* ---- text scale (Inter Tight) ---- */
+--fs-lead:20px;
+--fs-body:17px;
+--fs-body-s:15px;
+--fs-caption:13px;
+--fs-label:12px;
+
+/* @kind font */ --lh-display:1.02;
+/* @kind font */ --lh-heading:1.12;
+/* @kind font */ --lh-lead:1.4;
+/* @kind font */ --lh-body:1.55;
+
+/* @kind font */ --ls-display:-0.025em;
+/* @kind font */ --ls-heading:-0.015em;
+/* @kind font */ --ls-body:0em;
+/* @kind font */ --ls-label:0.10em; /* uppercase eyebrow labels */
+}

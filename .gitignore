@@ -1,0 +1,24 @@
+node_modules
+dist
+*.local
+.DS_Store
+.vercel
+.netlify
+
+# Local environment and credentials: every .env file except the empty template.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs, caches and build info
+*.log
+npm-debug.log*
+coverage
+*.tsbuildinfo
+
+# Original reference material (148 MB of source uploads, incl. photos of real
+# people and partner files). Kept on disk for reference only; not part of the
+# app, never deployed, and not committed. See docs/ASSET_CATALOGUE.md.
+docs/reference/original/
